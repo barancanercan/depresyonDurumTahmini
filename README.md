@@ -68,6 +68,47 @@ To run the project, follow these steps:
 4. **Correlation Analysis:**
     There is a positive correlation between a country's happiness score and the six contributing factors.
 
+## Model Performance Evaluation
+
+### Random Forest Results:
+#### Validation Set:
+- Accuracy: 0.6629
+- Precision: 0.5926
+- Recall: 0.1267
+- F1-score: 0.2088
+
+#### Test Set:
+- Accuracy: 0.6628
+- Precision: 0.5895
+- Recall: 0.1297
+- F1-score: 0.2127
+
+### SGD Classifier Results:
+#### Validation Set:
+- Accuracy: 0.5471
+- Precision: 0.3535
+- Recall: 0.3502
+- F1-score: 0.3518
+
+### Comments:
+#### Random Forest:
+- **Accuracy:** The model's accuracy is approximately 66%, indicating that the model correctly predicts 66% of the instances.
+- **Precision:** The precision is around 0.59, meaning that approximately 59% of the positive predictions are actually positive. However, the recall is quite low (0.13), indicating the model's weakness in capturing positive instances.
+- **F1-score:** The F1-score is around 0.21, reflecting the imbalance between precision and recall. A low F1-score suggests the overall performance of the model needs improvement.
+
+#### SGD Classifier:
+- **Accuracy:** The model's accuracy is approximately 54.7%, which is lower than that of the Random Forest.
+- **Precision and Recall:** Both precision and recall values are close to each other, around 0.35. This indicates the model's low rate of correctly predicting and capturing positive instances.
+- **F1-score:** The F1-score is around 0.35, indicating that the model performs better than Random Forest in terms of balance between precision and recall, but still has a lower overall accuracy.
+
+### General Evaluation:
+#### Model Performance:
+- The Random Forest model shows better performance in terms of accuracy (66%), but the imbalance between precision and recall results in a low F1-score.
+- The SGD Classifier model has a more balanced precision and recall, but the overall accuracy is lower.
+
+#### Low Recall:
+- The low recall values in both models indicate difficulty in capturing positive instances. This can be problematic, especially for identifying critical conditions like depression.
+
 ## Contribution
 
 If you wish to contribute to the project, follow these steps:
